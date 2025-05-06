@@ -1,3 +1,5 @@
+import { HexUtils } from "../utils/hex-utils";
+
 // Represents a color using red, green, and blue components.
 class RgbColorModel implements ColorModel {
 
@@ -24,9 +26,7 @@ class RgbColorModel implements ColorModel {
 
     // Define a color using hexadecimal color code.
     fromHex(hex: number): void {
-        if (typeof hex !== 'number' || (hex < 0x000000 || hex > 0xffffff) || isNaN(hex)) {
-            throw new Error('Invalid hex color code. It should be a number between 0x000000 and 0xffffff.');
-        };
+        HexUtils.validateNumHex(hex);
             
         this.red = (hex >> 16) & 255;
         this.green = (hex >> 8) & 255;
