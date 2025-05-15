@@ -46,5 +46,3 @@ class HexUtils {
         return numHex;
     };
 };
-
-export { HexUtils };

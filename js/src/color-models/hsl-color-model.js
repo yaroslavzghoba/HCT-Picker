@@ -56,5 +56,3 @@ function calculateHsl(hex) {
     lightness: hsl[2]
   };
 }
-
-export { HslColorModel };
