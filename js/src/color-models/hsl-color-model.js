@@ -1,6 +1,3 @@
-import convert from 'color-convert';
-import { HexUtils } from "../utils/hex-utils";
-
 // Represents a color using hue, saturation, and lightness components.
 class HslColorModel {
 

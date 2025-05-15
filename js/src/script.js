@@ -1,12 +1,9 @@
-import { HexUtils } from "./utils/hex-utils";
-
 const SELECTED_COLOR_VAR_NAME = '--primary-color';
 const root = document.documentElement;
 
 // Change the selected color in the CSS variable.
 function changeSelectedCode(hexValue) {
     root.style.setProperty(SELECTED_COLOR_VAR_NAME, '#' + hexValue);
-    return true;
 }
 
 // Get the input field with HEX color code.

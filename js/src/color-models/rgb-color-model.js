@@ -1,5 +1,3 @@
-import { HexUtils } from "../utils/hex-utils";
-
 // Represents a color using red, green, and blue components.
 class RgbColorModel {
 
